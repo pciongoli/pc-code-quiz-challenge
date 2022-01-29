@@ -1,3 +1,14 @@
+var questionEl = document.querySelector("#question");
+var optionListEl = document.querySelector("#option-list");
+var questionResultEl = document.querySelector("#question-result");
+var timerEl = document.querySelector("#timer");
+var buttonA = document.getElementById("1");
+var buttonB = document.getElementById("2");
+var buttonC = document.getElementById("3");
+var buttonD = document.getElementById("4");
+
+
+
 var questions = [
     {
       question: "Commonly used data types DO NOT include:",
@@ -9,26 +20,27 @@ var questions = [
         "The condition in an if / else statement is enclosed within ____.",
       choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
       answer: "parentheses",
-    },
+    },  
+    
+    
   ];
   
-  var questionEl = document.querySelector("#question");
-  var optionListEl = document.querySelector("#option-list");
-  var questionResultEl = document.querySelector("#question-result");
-  var timerEl = document.querySelector("#timer");
+
   
   var questionIndex = 0;
   var correctCount = 0;
   
-  var time = 20;
+  var time = 60;
   var intervalId;
   
   function endQuiz() {
+    // call clear interval to stop timer from running
     clearInterval(intervalId);
     var body = document.body;
     body.innerHTML = "Game over, You scored " + correctCount;
   }
   
+
   function updateTime() {
     time--;
     timerEl.textContent = time;
@@ -82,7 +94,7 @@ var questions = [
         timerEl.textContent = time;
       }
     }
-    setTimeout(nextQuestion, 2000);
+    setTimeout(nextQuestion, 500);
   }
   
   renderQuestion();
