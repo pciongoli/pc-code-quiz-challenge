@@ -1,5 +1,8 @@
 # pc-code-quiz-challenge
 
+* Link to Deployed Project
+* https://pciongoli.github.io/pc-code-quiz-challenge/
+
 ## Description
 
 * This project was to create a code quiz in which myself and fellow classmates could participate in to test our knowledge on what we hav elearned and see how each other has progressed throughout the course.
@@ -21,4 +24,4 @@
 
 ## Screenshot of Deployed Project
 
-assets/images/deployed_Project.jpg
+<img href="./assets/images/deployed_Project/>
