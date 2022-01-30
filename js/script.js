@@ -2,7 +2,7 @@ var questionEl = document.querySelector("#question");
 var optionListEl = document.querySelector("#option-list");
 var questionResultEl = document.querySelector("#question-result");
 var timerEl = document.querySelector("#timer");
-
+var startQuiz = document.querySelector("#game-begin");
 
 
 
@@ -73,11 +73,13 @@ var questions = [
 
   shuffle(questions);
 
+
+
   function endQuiz() {
     // call clear interval to stop timer from running
     clearInterval(intervalId);
     var body = document.body;
-    body.innerHTML = "You have finished the , You scored " + correctCount;
+    body.innerHTML = "You have finished the Coding Challenge Quiz, Your final score is " + correctCount;
   }
   
 
