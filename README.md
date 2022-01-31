@@ -24,4 +24,4 @@
 
 ## Screenshot of Deployed Project
 
-<img href="./assets/images/deployed_Project/>
+![deployed_Project](https://user-images.githubusercontent.com/94708192/151726222-3d4b846c-7cca-45f4-b127-e84027834dd6.jpg)
