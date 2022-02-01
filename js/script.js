@@ -153,7 +153,7 @@ var getPlayerName = function() {
   while (name === "" || name === null) {{
     name = prompt("What is your Name?");
   }
-  console.log("Welcome " + name + "please enjoy the quiz.");
+  console.log("Welcome " + name + " please enjoy the quiz.");
   return name;
 }saveScore();
 };
